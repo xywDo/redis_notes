@@ -1,0 +1,227 @@
+[
+	{
+		"path": "$ROOTPATH$/src/server.c",
+		"bookmarks": [
+			{
+				"line": 754,
+				"column": 35,
+				"label": "定时增量的rehash dict"
+			},
+			{
+				"line": 819,
+				"column": 58,
+				"label": "定时触发（关联主的定时触发器），检测超时未返回的阻塞连接"
+			},
+			{
+				"line": 1007,
+				"column": 39,
+				"label": "随机删除失效的key"
+			},
+			{
+				"line": 1297,
+				"column": 41,
+				"label": "触发AOF写入"
+			},
+			{
+				"line": 2144,
+				"column": 39,
+				"label": "redis全局增加定时触发的任务"
+			},
+			{
+				"line": 2769,
+				"column": 42,
+				"label": "每次执行Redis的命令检测有没有可以唤醒的Blocked连接"
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/src/server.h",
+		"bookmarks": [
+			{
+				"line": 617,
+				"column": 27,
+				"label": "redis K/V 里面的Value的包装类"
+			},
+			{
+				"line": 649,
+				"column": 5,
+				"label": "redis DB 的定义结构"
+			},
+			{
+				"line": 677,
+				"column": 30,
+				"label": "阻塞命令阻塞状态的定义"
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/src/db.c",
+		"bookmarks": [
+			{
+				"line": 623,
+				"column": 35,
+				"label": "scan扫描指令"
+			},
+			{
+				"line": 1081,
+				"column": 21,
+				"label": "key的expire信息是单独存在db的expires dict中的"
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/src/dict.h",
+		"bookmarks": [
+			{
+				"line": 46,
+				"column": 26,
+				"label": "redis K/V 的定义"
+			},
+			{
+				"line": 135,
+				"column": 31,
+				"label": "如果hash碰撞，检测key的值是否相等"
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/src/dict.c",
+		"bookmarks": [
+			{
+				"line": 146,
+				"column": 24,
+				"label": "扩展hash表的容量"
+			},
+			{
+				"line": 187,
+				"column": 32,
+				"label": "rehash dict"
+			},
+			{
+				"line": 308,
+				"column": 17,
+				"label": "如果正在rehash，那么新的k/v 插入HT[1]"
+			},
+			{
+				"line": 384,
+				"column": 30,
+				"label": "是否释放key/value引用的内存"
+			},
+			{
+				"line": 837,
+				"column": 31,
+				"label": "重要方法，增量rehash后，扫描key的时候，优先扫描小的ht"
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/src/t_set.c",
+		"bookmarks": [
+			{
+				"line": 289,
+				"column": 29,
+				"label": "当set中的元素为空时，删除set "
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/src/sds.c",
+		"bookmarks": [
+			{
+				"line": 203,
+				"column": 30,
+				"label": "redis字符串扩容"
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/src/t_zset.c",
+		"bookmarks": [
+			{
+				"line": 144,
+				"column": 26,
+				"label": "插入调表，如果分数相同，则比较字符串来决定大小"
+			},
+			{
+				"line": 1313,
+				"column": 6,
+				"label": "添加zset的元素"
+			},
+			{
+				"line": 1349,
+				"column": 36,
+				"label": "如果插入模式是INCR，如果分数变化了，先删除原来的记录后插入"
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/src/lazyfree.c",
+		"bookmarks": [
+			{
+				"line": 53,
+				"column": 43,
+				"label": "异步删除，只有当key对应的value触发了一定的阈值，才启动后台任务真正删除value"
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/src/expire.c",
+		"bookmarks": [
+			{
+				"line": 96,
+				"column": 21,
+				"label": "每1ms执行的过期key检测"
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/src/bio.c",
+		"bookmarks": [
+			{
+				"line": 140,
+				"column": 19,
+				"label": "有新的任务添加，唤醒特定type的定时任务线程"
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/src/module.c",
+		"bookmarks": [
+			{
+				"line": 5085,
+				"column": 42,
+				"label": "命令过滤或者预处理"
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/src/evict.c",
+		"bookmarks": [
+			{
+				"line": 445,
+				"column": 26,
+				"label": "内存是否需要清理"
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/src/blocked.c",
+		"bookmarks": [
+			{
+				"line": 609,
+				"column": 47,
+				"label": "每次有新的添加操作，就触发添加Blocking Ready的操作"
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/src/replication.c",
+		"bookmarks": [
+			{
+				"line": 2566,
+				"column": 28,
+				"label": "数据同步到从节点"
+			}
+		]
+	}
+]
