@@ -1,4 +1,4 @@
-# redis 源码阅读笔记
+# Redis(5.0.9) 源码阅读笔记
 
 ### 环境要求
 * Visual Studio Code
