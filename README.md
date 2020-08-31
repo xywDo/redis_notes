@@ -1,4 +1,8 @@
-This README is just a fast *quick start* document. You can find more detailed documentation at [redis.io](https://redis.io).
+# redis 源码阅读笔记
+
+### 环境要求
+* Visual Studio Code
+* VS的BookMarks插件
 
 What is Redis?
 --------------
